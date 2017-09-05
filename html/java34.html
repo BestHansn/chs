@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <style>
+        .stage{
+            transform-style:preserve-3d;
+            position: absolute;
+            top:200px;
+            left:200px;
+            transform: rotateX(10deg) rotateY(19deg);
+            width:300px;
+            height:300px;
+            transform-origin: center;
+            transition: all 2s;
+        }
+        .stage div{
+            width:300px;
+            height:300px;
+            position:absolute;
+            background-image: url("../img/2.jpg");
+        }
+        .stage:hover{
+            transform: rotateX(360deg) rotateY(360deg);
+        }
+        .top{
+            background: red;
+            transform: rotateX(90deg) translateZ(150px);
+        }
+        .bottom{
+            background: green;
+            transform: rotateX(-90deg) translateZ(150px);
+        }
+        .left{
+            background: deeppink;
+            transform: rotateY(-90deg) translateZ(150px);
+        }
+        .right{
+            background: black;
+            transform: rotateY(90deg) translateZ(150px)
+        }
+        .front{
+            background: gold;
+            transform: translateZ(150px);
+        }
+        .back{
+            background: orange;
+            transform: translateZ(150px);
+        }
+    </style>
+</head>
+<body>
+<div class="stage">
+    <div class="top">
+    </div>
+    <div class="bottom"></div>
+    <div class="left"></div>
+    <div class="right"></div>
+    <div class="front"></div>
+    <div class="back"></div>
+</div>
+
+</body>
+</html>
